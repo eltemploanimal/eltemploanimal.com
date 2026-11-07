@@ -1173,3 +1173,31 @@ h2 span {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+
+/* Cambios de portada solicitados */
+.hero h1 {
+  font-size: clamp(27px, 4.2vw, 54px);
+}
+
+.hero-philosophy {
+  max-width: 520px;
+  margin-top: 14px;
+  color: rgba(248, 242, 231, 0.82);
+  font-size: clamp(15px, 1.6vw, 18px);
+  line-height: 1.65;
+}
+
+.hero-meta {
+  font-size: 20px;
+}
+
+@media (max-width: 560px) {
+  .hero h1 {
+    font-size: clamp(23.5px, 7.5vw, 35px);
+  }
+
+  .hero-philosophy {
+    font-size: 14px;
+  }
+}
